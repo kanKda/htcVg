@@ -10,6 +10,10 @@ html, body {
     justify-content: center;
     align-items: center;
     padding: 0;
+    @media only screen and (max-width: 1280px) {
+        min-width: 1280px;
+        overflow: auto;
+    }
 }
 
 main {
