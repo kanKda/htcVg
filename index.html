@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/style.css" type="text/css">
+    <script defer src="dist/bundle.js"></script>
+    <title>Vitalya_Gora</title>
+</head>
+<body>
+    <main>
+        <nav id="tabs">
+            <div class="tab tab-on" data-container="profile">Профиль</div>
+            <div class="tab tab-off" data-container="friends">Друзья пользователя</div>
+        </nav>
+        <div class="container" id="container">
+            <div class="profile" id="profile">
+                <div class="profile_colLeft">
+                    <div class="profilePic"></div>
+                    <button class="profileAddFriend ">Добавить в друзья</button>
+                </div>
+                <div class="profile_colRight" id="profileInfo">
+                    <div class="profileNameCity">
+                        <p class="profileName" data-info="name">Виталя Гора</p>
+                        <p class="profileCity" data-info="city">г. Нижние Шахты</p>
+                    </div>
+                    <p class="profileField">Семейное положение</p>
+                    <p class="profileFieldValue" data-info="ms">Холост</p>
+                    <p class="profileField">Телефон</p>
+                    <p class="profileFieldValue" data-info="phone">+7 (440) 554-32-12</p>
+                    <p class="profileField">E-mail</p>
+                    <div class="profileFieldValue">
+                    <p style="margin-bottom: 0;" data-info="mail-val">vitalya@gora.ru</p>
+                        <div class="profileMailCtx">
+                            <span id="mailEdit">Редактировать</span > | <a href="#">Перейти</a>
+                        </div>
+                    </div>
+                    <div class="profileHobby">
+                        <p class="profileField profileFieldHobby">Интересы</p>
+                        <div class="profileHobbyList" id="hobbyList">
+                            <div class="profileHobbyItem">музыка</div>
+                            <div class="profileHobbyItem">компьютеры</div>
+                            <div class="profileHobbyItem">радио</div>
+                            <div class="profileHobbyItem" data-hobby="add">+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="friends" id="friends" style="visibility: hidden;">
+                <div class="scrollbar" id="scrollbar">
+                    <div class="scrollbarThumb" id="scrollThumb" style="top: 0px;"></div>
+                </div>
+                <div class="friendsContainerScroll" id="scrollContainer" style="transform: translateX(0px);">
+                    <div class="friend">
+                        <div class="friendPic">
+                            <img src="src/img/avatar/thumb-31046.jpg">
+                        </div>
+                        <p class="friendName"><a href="#">Лев Бронштейн</a></p>
+                        <p class="friendCity">г. Ханты-Мансийск</p>
+                        <p class="friendOnline">Online</p>
+                    </div>
+                    <div class="friend">
+                        <div class="friendPic">
+                            <img src="src/img/avatar/thumb-24960.jpg">
+                        </div>
+                        <p class="friendName"><a href="#">Евгений Понасенков</a></p>
+                        <p class="friendCity">г. Тамбов</p>
+                    </div>
+                    <div class="friend">
+                        <div class="friendPic">
+                            <img src="src/img/avatar/image_10806161457435213399.jpg">
+                        </div>
+                        <p class="friendName"><a href="#">Дмитрий Пучков</a></p>
+                        <p class="friendCity">г. Некий</p>
+                    </div>
+                    <div class="friend">
+                        <div class="friendPic">
+                            <img src="src/img/avatar/Uir.gif">
+                        </div>
+                        <p class="friendName"><a href="#">Стандартный Александр</a></p>
+                        <p class="friendCity">г. Стандартный</p>
+                        <p class="friendOnline">Online</p>
+                    </div>
+                    <div class="friend">
+                        <div class="friendPic">
+                            <img src="src/img/avatar/computer-icons-avatar-icon-design-male-teacher-png-clip-art-thumbnail.png">
+                        </div>
+                        <p class="friendName"><a href="#">Тестовая Татьяна</a></p>
+                        <p class="friendCity">г. Тестовый</p>
+                        <p class="friendOnline">Online</p>
+                    </div>
+                    <div class="friend">
+                        <div class="friendPic">
+                            <img src="src/img/avatar/computer-icons-avatar-icon-design-male-teacher-png-clip-art-thumbnail.png">
+                        </div>
+                        <p class="friendName"><a href="#">Тестовая Татьяна</a></p>
+                        <p class="friendCity">г. Тестовый</p>
+                        <p class="friendOnline">Online</p>
+                    </div>
+                    <div class="friend">
+                        <div class="friendPic">
+                            <img src="src/img/avatar/computer-icons-avatar-icon-design-male-teacher-png-clip-art-thumbnail.png">
+                        </div>
+                        <p class="friendName"><a href="#">Тестовая Татьяна</a></p>
+                        <p class="friendCity">г. Тестовый</p>
+                        <p class="friendOnline">Online</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

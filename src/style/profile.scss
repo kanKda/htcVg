@@ -1,0 +1,134 @@
+.profile {
+    margin-top: 20px;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 20px;
+}
+
+.profile_colLeft {
+    grid-column: 1/span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profilePic {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 90%;
+    height: 250px;
+    box-shadow: inset 0 0 5px rgba($color: #000000, $alpha: 0.5);
+    background: url("/src/img/avatar/mainProfile.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.profileAddFriend {
+    width: 90%;
+    height: 50px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 100%;
+    background-image: linear-gradient(0deg, #e65400 0%, #e68100 100%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile_colRight {
+    grid-column: 2/span 1;
+    display: grid;
+    grid-template-rows: 30% repeat(3, 10%) 35%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.profileNameCity {
+    grid-column: 1/span 2;
+    p {
+        width: 50%;
+    }
+}
+
+.profileName {
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+.profileCity {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: gray;
+    margin: 0;
+}
+
+.profileField {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.profileFieldValue {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profileMailCtx {
+    margin-top: 5px;
+    font-size: 12px;
+    position: relative;
+    z-index: 1;
+    span {
+        cursor: pointer;
+        color: green;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.profileInput {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
+    font-size: 16px;
+    width: 50%;
+}
+
+.profileHobby {
+    grid-column: 1/span 2;
+    overflow: auto;
+}
+
+.profileFieldHobby {
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.profileHobbyList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+    button {
+        width: 80px;
+        height: 25px;
+        border: none;
+        background: rgba($color: #000000, $alpha: 0.5);
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.profileHobbyItem {
+    border: 1px solid rgba($color: #000000, $alpha: 0.3);
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1574af;
+    cursor: pointer;
+    &:hover {
+        background: rgba($color: #000000, $alpha: 0.1);
+        color: black;
+    }
+}
